@@ -1,10 +1,15 @@
 function reverseString(str) {
   // type your code here
 
+  var reversed = ""
+
   for(var i=0; i < str.length; i++){
-    console.log(i)
+    //console.log(str[i])
+    reversed = str[i] + reversed 
   }
 
+  console.log("reversed", reversed)
+  return reversed
 }
 
 if (require.main === module) {
