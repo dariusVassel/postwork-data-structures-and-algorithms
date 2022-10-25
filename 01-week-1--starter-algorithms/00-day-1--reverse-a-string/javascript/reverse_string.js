@@ -1,5 +1,10 @@
 function reverseString(str) {
   // type your code here
+
+  for(var i=0; i < str.length; i++){
+    console.log(i)
+  }
+
 }
 
 if (require.main === module) {
