@@ -1,5 +1,30 @@
 function selectionSort(arr) {
   // type your code here
+  let orderedArray = []
+  let inserted 
+
+  for (let i = 0; i < arr.length; i++){
+    inserted = false
+    if (i == 0){
+      orderedArray.push(arr[i])
+    }
+    else {
+      for (let j = 0; j < orderedArray.length; j++){
+        if (arr[i] < orderedArray[j]){
+      
+          inserted = true;
+          
+          orderedArray.splice(j, 0, arr[i])
+          break
+        } 
+      }
+      if (!inserted){
+        orderedArray.push(arr[i])
+      }
+    }
+
+  }
+  return orderedArray
 }
 
 if (require.main === module) {
