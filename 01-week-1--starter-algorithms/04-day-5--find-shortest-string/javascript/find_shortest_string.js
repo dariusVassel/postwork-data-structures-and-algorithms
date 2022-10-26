@@ -1,19 +1,12 @@
 function findShortestString(arr) {
   // type your code here
-  let shortestString = ""
+  let shortestString = arr[0]
 
   for (let i = 0; i <arr.length; i++){
-    if (i==0){
-      shortestString = arr[i]
-    }
-    else {
+
       if (shortestString.length > arr[i].length){
         shortestString = arr[i]
       }
-      else {
-        console.log("nope")
-      }
-    }
   }
   return shortestString
 }
