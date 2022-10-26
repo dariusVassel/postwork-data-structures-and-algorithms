@@ -1,13 +1,10 @@
 function recursiveSearch(arr, target) {
   // type your code here
-  console.log(arr, "here")
   if (arr.length === 0) {
-    console.log(arr, "1")
     return false;
   }
 
   if (arr[0] === target) {
-    console.log(arr, "2")
     return true;
   }
 
